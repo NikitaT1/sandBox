@@ -96,4 +96,15 @@ function circleString(str){
     
 }
 
-setTimeout(circleString, 1000, string)  
+//setTimeout(circleString, 1000, string)  
+
+//Отобразить текущий день и время в следующем формате: DD/MM/YYYY HH:mm
+
+function currentDate(){
+let d = new Date();
+let ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);
+let mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(d);
+let da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);
+return (`Current date is: ${da} ${mo} ${ye}`);
+}
+console.log(currentDate())
