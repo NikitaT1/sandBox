@@ -96,4 +96,4 @@ function circleString(str){
     
 }
 
-setTimeout(circleString, 1000, string)
+setTimeout(circleString, 1000, string)  
