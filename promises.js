@@ -60,6 +60,7 @@ new Promise(function (resolve, reject) {
   })
 
 
+
   // const n = new Promise((resolve, reject)=>{
   //     setTimeout(()=> resolve(2), 2000)
   // })
