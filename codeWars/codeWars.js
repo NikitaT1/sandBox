@@ -6,23 +6,36 @@
 
 //https://www.codewars.com/kata/547274e24481cfc469000416
 
-class God {
-  static create() {
-    const newMan = new Man();
-    const newWoman = new Woman();
-    return [newMan, newWoman];
+
+function one () {
+  class God {
+    static create() {
+      const newMan = new Man();
+      const newWoman = new Woman();
+      return [newMan, newWoman];
+    }
+  }
+  class Human {
+    constructor() {}
+  }
+  class Man extends Human {
+    constructor() {
+      super();
+    }
+  }
+  class Woman extends Human {
+    constructor() {
+      super();
+    }
   }
 }
-class Human {
-  constructor() {}
-}
-class Man extends Human {
-  constructor() {
-    super();
-  }
-}
-class Woman extends Human {
-  constructor() {
-    super();
+
+// Your task is to complete the Cat class which Extends Animal 
+// and replace the speak method to return the cats name + meows. e.g. 'Mr Whiskers meows.'
+
+
+class Cat extends Animal {
+  speak(){
+    return `${this.name} meows.`;
   }
 }
