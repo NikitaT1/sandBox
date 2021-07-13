@@ -66,3 +66,5 @@ class Song {
  
 } 
 
+console.log(testing)
+
